@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="mn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Fibi — хувийн санхүүгийн бүртгэл</title>
+<meta name="description" content="Fibi — орлого, зарлага, хэтэвч, төсөв, зээлээ нэг дороос хянах апп.">
+<style>
+:root{--bg:#f3f6f9;--surface:#fff;--text:#16202a;--muted:#566370;--brand:#0288d1;--link:#01579b;--line:#dde4ea}
+@media (prefers-color-scheme:dark){:root{--bg:#0a1016;--surface:#121a22;--text:#e6edf3;--muted:#9aa7b4;--brand:#5cc4fa;--link:#5cc4fa;--line:#232e39}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",sans-serif;overflow-wrap:break-word}
+a{color:var(--link);text-underline-offset:.18em}
+a:focus-visible{outline:2px solid var(--brand);outline-offset:3px;border-radius:4px}
+.wrap{max-width:46rem;margin:0 auto;padding:0 16px}
+.bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:4px 20px;padding-top:18px;padding-bottom:18px}
+.brand{font-size:1.35rem;font-weight:700;letter-spacing:-.02em;color:var(--text);text-decoration:none}
+.brand::before{content:"";display:inline-block;width:.6em;height:.6em;margin-right:.4em;border-radius:50%;background:var(--brand)}
+nav{display:flex;flex-wrap:wrap;gap:4px 18px;font-size:.94rem}
+nav a{color:var(--muted);text-decoration:none;padding:4px 0}
+nav a:hover{color:var(--link)}
+nav a[aria-current]{color:var(--text);font-weight:600;text-decoration:underline 2px var(--brand);text-underline-offset:.45em}
+article{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:32px 36px 36px}
+h1{margin:0 0 .3em;font-size:clamp(1.6rem,6vw,2.15rem);line-height:1.2;letter-spacing:-.02em;text-wrap:balance}
+h2{margin:2em 0 .5em;font-size:1.2rem;line-height:1.3;text-wrap:balance}
+p{margin:0 0 1em}
+.meta{color:var(--muted);font-size:.92rem;margin-bottom:1.5em}
+.lead{font-size:1.15rem;color:var(--muted)}
+ul,ol{margin:0 0 1em;padding-left:1.35em}
+li{margin:.5em 0;padding-left:.2em}
+li::marker{color:var(--brand);font-weight:600}
+.todo{padding:0 .3em;border:1px dashed var(--muted);border-radius:6px;color:var(--muted)}
+.links{display:grid;gap:12px;margin-top:1.6em}
+.links a{display:block;padding:16px 18px;border:1px solid var(--line);border-radius:14px;text-decoration:none}
+.links a:hover{border-color:var(--brand)}
+.links strong{display:block}
+.links span{display:block;margin-top:2px;color:var(--muted);font-size:.94rem}
+footer{padding-top:20px;padding-bottom:40px;color:var(--muted);font-size:.9rem}
+footer p{margin:0}
+@media (max-width:560px){article{padding:22px 18px 24px;border-radius:16px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="index.html">Fibi</a>
+    <nav aria-label="Хуудсууд">
+      <a href="privacy.html">Нууцлалын бодлого</a>
+      <a href="delete-account.html">Бүртгэл устгах</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+<article>
+<h1>Fibi</h1>
+<p class="lead">Хувь хүний орлого, зарлагын бүртгэл.</p>
+<p>Орлого, зарлагаа бүртгэж, хэтэвч, төсөв, зээлээ нэг дороос хянах Android апп. Банкны хуулгаа импортолж, гүйлгээгээ автоматаар ангилуулна.</p>
+<div class="links">
+  <a href="privacy.html"><strong>Нууцлалын бодлого</strong><span>Апп ямар мэдээлэл хадгалдаг, хаана хадгалдаг, хэнтэй хуваалцдаг.</span></a>
+  <a href="delete-account.html"><strong>Бүртгэл, өгөгдөл устгах</strong><span>Бүртгэлээ болон өгөгдлөө хэрхэн устгах, устгуулах хүсэлт гаргах.</span></a>
+</div>
+</article>
+</main>
+<footer class="wrap">
+  <p>Fibi · Холбоо барих: <a href="mailto:bayaraa97.bb@gmail.com">bayaraa97.bb@gmail.com</a></p>
+</footer>
+</body>
+</html>
